@@ -1,38 +1,30 @@
 package com.codebind;
 
-import java.util.ArrayList;
+
 
 public class Module {
 private String moduleName;
 private String moduleID;
-private ArrayList<Student> stuList = new ArrayList<Student>();
+private Student stuList[];
 	
-	public Module(String modName,String modID,ArrayList<Student> SList){
-		this.setModuleName(modName);
-		this.setModuleID(modID);
-		this.stuList=SList;
+	public Module(String modName,String modID,Student sList[]){
+		this.moduleName=modName;
+		this.moduleID=modID;
+		this.stuList=sList;
 	}
 
 	public String getModuleName() {
-		return moduleName;
+		return this.moduleName;
 	}
 
-	public void setModuleName(String moduleName) {
-		this.moduleName = moduleName;
-	}
 
 	public String getModuleID() {
-		return moduleID;
+		return this.moduleID;
 	}
 
-	public void setModuleID(String moduleID) {
-		this.moduleID = moduleID;
-	}
-	public void addStudent(Student newStudent){
-		stuList.add(newStudent);
-	}
-	public ArrayList<Student>getSList() {
-		return stuList;
+	
+	public Student[] getSList() {
+		return this.stuList;
 	}
 }
 

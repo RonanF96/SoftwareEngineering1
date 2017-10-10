@@ -4,7 +4,7 @@ public class Student {
 
 private String name;
 private String dob;
-private int id;
+private double id;
 private int age;
 
 
@@ -46,17 +46,6 @@ public void setUsername(String username) {
 
 
 
-public static class studentExample{
-	
-	public static void main(String[] args){
-		
-	Student ronan= new Student("ronan","08/01/1996", 21);
 
-	System.out.println("Date of birth: " + ronan.getBirthDate() +" " + "Username: " + ronan.getUsername());
-	
-}
-
-	
-}
 }
 

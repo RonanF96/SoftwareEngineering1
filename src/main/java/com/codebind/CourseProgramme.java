@@ -1,17 +1,16 @@
 package com.codebind;
 
-import java.time.LocalDate;
-import java.util.ArrayList;
+import org.joda.time.DateTime;
 
 public class CourseProgramme {
 private String courseName;
-private ArrayList<Module> modList= new ArrayList<Module>();
-private LocalDate StartDate,EndDate;
+private Module modList[];
+private DateTime StartDate,EndDate;
 
 
-public CourseProgramme(String cName,ArrayList<Module> MList,LocalDate sDate,LocalDate eDate){
-this.setCourseName(cName);
-this.modList=MList;
+public CourseProgramme(String cName,Module[] mList,DateTime sDate,DateTime eDate){
+this.courseName=cName;
+this.modList=mList;
 this.setStartDate(sDate);
 this.setEndDate(eDate);
 }
@@ -27,29 +26,27 @@ public void setCourseName(String courseName) {
 }
 
 
-public LocalDate getStartDate() {
+public DateTime getStartDate() {
 	return this.StartDate;
 }
 
 
-public void setStartDate(LocalDate startDate) {
+public void setStartDate(DateTime startDate) {
 	StartDate = startDate;
 }
 
 
-public LocalDate getEndDate() {
+public DateTime getEndDate() {
 	return this.EndDate;
 }
 
 
-public void setEndDate(LocalDate endDate) {
+public void setEndDate(DateTime endDate) {
 	EndDate = endDate;
 }
-public ArrayList<Module>getMList(){
+public Module[]getMList(){
 	return this.modList;
 }
-public void addModule(Module newModule){
-	modList.add(newModule);
-}
+
 
 }
