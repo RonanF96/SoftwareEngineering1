@@ -14,7 +14,6 @@ public Student(String name,String dob,int age){
 	this.getUsername();
 	this.dob = dob;
 	this.age=age;
-	this.id=id++;
 }
 
 public void setName( String name ) {
@@ -40,8 +39,6 @@ public String getBirthDate() {
 
 public String getUsername() {
 	return name + age;
-}
-public void setUsername(String username) {
 }
 
 
