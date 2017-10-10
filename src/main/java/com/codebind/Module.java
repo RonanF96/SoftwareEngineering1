@@ -1,16 +1,16 @@
 package com.codebind;
 
-
+import java.util.ArrayList;
 
 public class Module {
 private String moduleName;
 private String moduleID;
-private Student stuList[];
+private ArrayList<Student> student = new ArrayList<Student>();
 	
-	public Module(String modName,String modID,Student sList[]){
+	public Module(String modName,String modID,ArrayList<Student> s){
 		this.moduleName=modName;
 		this.moduleID=modID;
-		this.stuList=sList;
+		this.student=s;
 	}
 
 	public String getModuleName() {
@@ -23,8 +23,8 @@ private Student stuList[];
 	}
 
 	
-	public Student[] getSList() {
-		return this.stuList;
+	public ArrayList<Student> getStudent() {
+		return this.student;
 	}
 }
 

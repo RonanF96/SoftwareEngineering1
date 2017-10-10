@@ -1,16 +1,18 @@
 package com.codebind;
 
+import java.util.ArrayList;
+
 import org.joda.time.DateTime;
 
 public class CourseProgramme {
 private String courseName;
-private Module modList[];
+private ArrayList<Module> module = new ArrayList<Module>();
 private DateTime StartDate,EndDate;
 
 
-public CourseProgramme(String cName,Module[] mList,DateTime sDate,DateTime eDate){
+public CourseProgramme(String cName,ArrayList<Module> m,DateTime sDate,DateTime eDate){
 this.courseName=cName;
-this.modList=mList;
+this.module=m;
 this.setStartDate(sDate);
 this.setEndDate(eDate);
 }
@@ -44,8 +46,8 @@ public DateTime getEndDate() {
 public void setEndDate(DateTime endDate) {
 	EndDate = endDate;
 }
-public Module[]getMList(){
-	return this.modList;
+public ArrayList<Module> getModule() {
+	return this.module;
 }
 
 
