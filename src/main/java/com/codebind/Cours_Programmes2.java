@@ -1,18 +1,21 @@
 package com.codebind;
 
+
 import java.util.ArrayList;
 
 import org.joda.time.DateTime;
 
 
 
-public class CourseProgramme {
+public class Cours_Programmes2 
+{
 private String courseName;
 private ArrayList<Module> module = new ArrayList<Module>();
 private DateTime StartDate,EndDate;
 
 
-public CourseProgramme(String cName,ArrayList<Module> m,DateTime sDate,DateTime eDate){
+public Cours_Programmes2(String cName,ArrayList<Module> m,DateTime sDate,DateTime eDate)
+{
 this.courseName=cName;
 this.module=m;
 this.StartDate=sDate;
